@@ -1,0 +1,68 @@
+/* Styles de base */
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+div img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+div {
+    display: inline-block;
+    width: 24%;
+    margin: 5px;
+    padding: 2px;
+}
+
+/* Media Query pour les écrans jusqu'à 998px */
+@media (max-width: 998px) {
+    div {
+        width: 30%;
+    }
+}
+
+/* Media Query pour les écrans jusqu'à 772px */
+@media (max-width: 772px) {
+    div {
+        width: 45%;
+    }
+
+    div img {
+        max-height: 30vh;
+        width: 100%;
+    }
+}
+
+/* Media Query pour les petits écrans (mode mobile) */
+@media (max-width: 500px) {
+    div {
+        width: 100%; /* div prend toute la largeur */
+        margin: 5px 0; /* espacement vertical */
+    }
+
+    div img {
+        max-height: none; /* supprime la limite de hauteur */
+        width: 100%; /* image prend toute la largeur du div */
+    }
+}
