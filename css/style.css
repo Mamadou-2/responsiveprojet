@@ -26,6 +26,8 @@ div img {
     height: 150px;
     display: block;
     margin: auto;
+    border: #000 solid;
+    border-radius: 10px;
 }
 
 div {
